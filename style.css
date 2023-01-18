@@ -1,0 +1,91 @@
+body,
+html {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+}
+#container {
+  /* width: 100%; */
+  height: 100vh;
+  background-color: powderblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  padding: 1rem;
+  justify-content: space-between;
+}
+h2 {
+  margin: 10px;
+}
+.draggingContainer {
+  padding: 5px 10px;
+  min-height: 25px;
+}
+
+.list {
+  width: 100%;
+  background-color: rgb(209, 227, 229);
+  box-shadow: 2px 2px 5px gray;
+  opacity: 0.8;
+}
+
+.card {
+  background-color: rgb(232, 237, 238);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 5px;
+  box-shadow: 2px 2px 5px gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card.dragging {
+  opacity: 0.4;
+}
+.card .title {
+  font-weight: bold;  
+}
+
+.addBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.addBox-input {
+  border-radius: 5px;
+  background: white;
+  border: 1px solid powderblue;
+  height: 30px;
+  width: 80%;
+  padding: 0 10px;
+}
+.addBox-button {
+  border-radius: 15px;
+  border: 1px solid powderblue;
+  height: 30px;
+  width: 15%;
+}
+.addBox-button:hover {
+  cursor: pointer;
+}
+.addBox-button:active {
+  transform: translateY(1px);
+}
+
+.remove {
+  border: 1px solid black;
+    border-radius: 16px;
+    padding: 2px;    
+    height: 100%;
+    box-shadow: 2px 2px 5px grey;
+}
+.remove:hover {
+  cursor: pointer;
+}
+.remove:active {
+  transform: translateY(1px);
+}
